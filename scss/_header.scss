@@ -1,0 +1,55 @@
+.header{
+    min-height: 750px;
+    background-color: $back-color;
+    background-image: url(../img/img\ face.png);
+    background-position: 500px 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-menu{
+    min-height: 240px;
+    &__name{
+        font-size: 90px;
+        @include bold;
+        color: $text-color__section;
+    }
+    &__proff{
+        font-size: 22px;
+        @include bold;
+        color: $text-color;
+        margin-bottom: 10px;;
+    }
+    &__button{
+        border: none;
+        background-color: #ffffff;
+        box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
+        width: 160px;
+        height: 50px;
+        @include bold;
+        color: $text-color__section;
+        font-size: 16px;
+        margin-top: 20px;
+        &:hover{
+            color: #ffffff;
+            background-color: $text-color__section;
+        }
+    }
+    &__hire-btn{
+        border: 2px solid $text-color__section;
+        background-color: transparent;
+        color: $text-color__section;
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+        @include bold;
+        margin-top: 20px;
+        &:hover{
+            color: #ffffff;
+            border-color: #ffffff;
+            background-color: $text-color__section;
+        }
+    }
+}

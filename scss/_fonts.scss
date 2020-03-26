@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Asap-bold';
+    src: url(../fonts/Asap-Bold.ttf);
+}
+@font-face {
+    font-family: 'Asap-regualar';
+    src: url(../fonts/Asap-Regular.ttf);
+}
+@font-face {
+    font-family: 'Asap-medium';
+    src: url(../fonts/Asap-Medium.ttf.ttf);
+}
+@mixin bold {
+    font-family: 'Asap-bold', sans-serif;
+}
+@mixin regular {
+    font-family: 'Asap-regular', sans-serif;
+}
+@mixin medium {
+    font-family: 'Asap-medium', sans-serif;
+}
