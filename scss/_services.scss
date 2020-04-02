@@ -1,0 +1,53 @@
+.services{
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $back-color;
+}
+.services-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .section-name{
+        color: $text-color__section;
+        text-transform: uppercase;
+        font-size: 46px;
+        @include bold;
+        letter-spacing: 5px;
+        &::before{
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: $text-color__section;
+            margin: 6px auto;
+        }  
+    }
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__card{
+        max-width: 390px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    &__nm{
+        color: $text-color__section;
+        @include bold;
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    &__img{
+        width: 80px;
+        height: 75px;
+    }
+}

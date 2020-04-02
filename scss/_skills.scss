@@ -1,0 +1,34 @@
+.skills{
+    min-height: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-name{
+    color: $text-color__section;
+    text-transform: uppercase;
+    font-size: 46px;
+    @include bold;
+    letter-spacing: 5px;
+    margin-bottom: 55px;
+    &::before{
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: $text-color__section;
+        margin: 6px auto;
+    }  
+}
+.skills-wrap{
+    &__statistic{
+        max-width: 1000px;
+        width: 100%;
+        min-height: 415px;
+        background: url(../img/skill\ board.png) no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+}
