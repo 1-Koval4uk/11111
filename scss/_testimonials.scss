@@ -1,0 +1,55 @@
+.testimonials{
+
+}
+.testimonials-wrap{
+    margin: 80px 0;
+    .section-name{
+        text-align: center;
+    }
+    &__slider{
+        width: 95%;
+    }
+    &__card{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #000000;
+        margin: 0 60px;
+    }
+    &__photo{
+        max-width: 159px;
+        width: 100%;
+        max-height: 159px;
+        height: 100%;
+        margin: 20px 35px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name{
+        max-width: 200px;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $text-color__nav;
+        @include bold;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        &::after{
+            content: 'CEO, Random company';
+            font-size: 12px;
+            @include regular;
+            margin-top: 2px;
+        }
+    }
+    &__about{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $text-color;
+        @include regular;
+        max-width: 580px;
+    }
+}
+
+  
