@@ -36,6 +36,13 @@
         letter-spacing: -1px;
     }
 }
+@media screen and (max-width: 420px){
+    .counter-wrap{
+        &__text{
+            font-size: 12px;
+        }
+    }
+}
 
 
 

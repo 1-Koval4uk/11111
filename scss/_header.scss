@@ -1,16 +1,21 @@
 .header{
     min-height: 750px;
     background-color: $back-color;
-    background-image: url(../img/img\ face.png);
-    background-position: 500px 100px;
-    background-repeat: no-repeat;
+    // background-image: url(../img/img\ face.png);
+    // background-position: 500px 100px;
+    // background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
 .section-menu{
     min-height: 240px;
+    max-width: 550px;
     &__name{
         font-size: 90px;
         @include bold;
@@ -50,6 +55,37 @@
             color: #ffffff;
             border-color: #ffffff;
             background-color: $text-color__section;
+        }
+    }
+}
+.header-photo{
+    max-height: 550px;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 880px){
+    .header-photo{
+        max-width: 397px;
+    }
+}
+@media screen and (max-width: 770px){
+    .header-photo{
+        display: none;
+    }
+    .header-wrap{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 370px){
+    .section-menu{
+        &__name{
+            font-size: 75px;
+        }
+        &__proff{
+            font-size: 18px;
+        }
+        &__btn{
+            width: 120px;
         }
     }
 }
